@@ -13,11 +13,6 @@ The Ai agent is able to perform 3 main tasks as following:
 
 ## Getting Started:
 
-### Get the code:
-```git clone https://github.com/Ni2M/AI-agent.git```
-
-```cd AI-agent```
-
 ### Create and set API keys:
 
 Here I use OpenAI and Tavily search engine tools within the agent. API keys for these packages are required in `.env` file. To use these packages, you need to create and pass API keys. Sign up and create the keys for [Tavily](https://app.tavily.com/home) and [OpenAI](https://auth.openai.com/create-account). Once you have those keys, you need to add those to the `.env` file as following:
@@ -33,10 +28,9 @@ The required packages are avilable in the `requirement.txt` file.
 
 ### Use the AI agent:
 
-You can run the jupyter notebook file. The UI is within the jupyter notebook. You can easily use the agent whether within the notebook or by using the generated URL.
-Alternatively you can run app.py.
+You can run the jupyter notebook file `Ai-agent-run.ipynb`. The UI is within the jupyter notebook. You can easily use the agent whether within the notebook or by using the generated URL.
 
-``` jupyter notebook AI-agent-run.ipynb```
+Alternatively you can run the `app.py`.
 
 # Overview of the decision makings and the agent's structure
 
