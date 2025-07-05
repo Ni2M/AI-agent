@@ -1,5 +1,4 @@
-# AI Agent for Amazon Web
-
+# AI Agent
 This repository showcases an AI agent created in Langgraph with Gradio user interface. The user interface is a chat interface where the user can type in and/or attach an image and ask questions from the AI agent. Here is a snapshot of the user interface:
 
 ![title](images/UI.png)
@@ -13,18 +12,30 @@ The Ai agent is able to perform 3 main tasks as following:
 
 ## Getting Started:
 
+### Install the dependencies:
+The required packages are avilable in the `requirement.txt` file.
+
+```pip install -r requirements.txt```
+
 ### Create and set API keys:
 
-Here I use OpenAI and Tavily search engine tools within the agent. API keys for these packages are required in `.env` file. To use these packages, you need to create and pass API keys. Sign up and create the keys for [Tavily](https://app.tavily.com/home) and [OpenAI](https://auth.openai.com/create-account). Once you have those keys, you need to add those to the `.env` file as following:
+Here I used OpenAI and Tavily search engine tools within the agent. API keys for these packages are required in your `.env` file. 
+
+- Create a `.env` file:
+
+```bash
+cp .env.example .env
+```
+- Define required API keys in your `.env` file:
+
+To use these packages, you need to create and pass API keys. Sign up and create the keys for [Tavily](https://app.tavily.com/home) and [OpenAI](https://auth.openai.com/create-account). Once you have your API key, add it to your `.env` file:
 
 ```OPENAI_API_KEY="your-api-key"```
 
 ```TAVILY_API_KEY="your-api-key"```
 
-### Install the dependencies:
-The required packages are avilable in the `requirement.txt` file.
+Important note: An API key is a unique code that identifies your requests to the API. Your API key is intended to be used by you and [must be kept private](https://help.openai.com/en/articles/5008148-can-i-share-my-api-key-with-my-teammate-coworker). See OpenAI's [Best Practices for API Key Safety](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety).
 
-```pip install -r requirements.txt```
 
 ### Use the AI agent:
 
@@ -54,8 +65,6 @@ The agent is created based on LangGraph's [**reAct**](https://langchain-ai.githu
 
 ### User Interface
 For interactive agent and being able to pass image and text data, I created the user interface utilizing open source package [Gradio](https://www.gradio.app/guides/quickstart). Gradio's [`ChatInterface`](https://www.gradio.app/docs/gradio/chatinterface) is a high-level abstraction for creating chatbot UIs. In just a few lines of codes it can create a web-based demo around a chatbot model. Here I created a run_agent function that is passed to Gradio's ChatInterface. The UI can be used within a jupyter notebook.
-
->Note: More information on sharing UI demos and gradio apps using can be found in Gradio's [reference](https://www.gradio.app/guides/sharing-your-app).
 
 # Agent's documentation
 More details on the agent's API and codes are provided in `AI-agent-doc.ipynb`.
