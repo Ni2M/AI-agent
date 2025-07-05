@@ -28,7 +28,7 @@ cp .env.example .env
 ```
 - Define required API keys in your `.env` file:
 
-To use these packages, you need to create and pass API keys. Sign up and create the keys for [Tavily](https://app.tavily.com/home) and [OpenAI](https://auth.openai.com/create-account). Once you have your API key, add it to your `.env` file:
+Sign up and create the keys for [Tavily](https://app.tavily.com/home) and [OpenAI](https://auth.openai.com/create-account). Once you have your API key, add it to your `.env` file:
 
 ```OPENAI_API_KEY="your-api-key"```
 
